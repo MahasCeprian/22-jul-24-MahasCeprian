@@ -1,0 +1,371 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+
+.navbar-menu-project-revou{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: sticky;
+    top: -3%;
+    z-index: 99;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 2px solid lightgrey;
+    /* background-color: brown; */
+}
+/* ------------------------------------- */
+.container-hamburger-icon-project-revou{
+    display: none;
+}
+.container-logo-project-revou{
+    width: 18%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    /* background-color: blue; */
+}
+.container-logo-project-revou .content-logo-project-revou{
+    width:90%;
+    height: 73%;
+    display: flex;
+    align-items: end;
+    gap: 2%;
+    /* background-color: chartreuse; */
+}
+.content-logo-project-revou img{
+    height: 100%;
+    width: 100%;
+    /* background-color: #ce9601; */
+}
+
+/* ------------------------------------- */
+.container-list-menu-project-revou{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding: 0 3%;
+    align-items: center;
+    /* background-color: blueviolet; */
+}
+
+.container-list-menu-project-revou ul{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    gap: 1%;
+    /* background-color: #01743b; */
+
+}
+
+.container-list-menu-project-revou ul li{
+    width: 20%;
+    height: 45px;
+    display: flex;
+    list-style: none;
+    padding: 0 1%;
+    border-radius: 5px;
+    border: 2px solid black;
+    /* background-color: #477e57; */
+    transition: 0.5s ease;
+    /* background-color:violet; */
+}
+.container-list-menu-project-revou ul li:hover{
+    background-color: yellow;
+}
+.container-list-menu-project-revou ul li a{
+    width: 100%;
+    height: 100%;
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'roboto-bold', arial, sans-serif;
+    transition: 0.5s ease;
+    /* background-color: cadetblue; */
+}
+.container-list-menu-project-revou ul li a:hover{
+    color: red;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* H   E   A   D   E   R */
+.header-container-project-revou{
+    width: 100%; 
+    height: 45vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    /* background-color: blue; */
+}
+
+.header-content-project-revou{
+    width: 90%; 
+    height: 90%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    gap: 54px; 
+    /* background-color: brown; */
+}
+
+.header-content-project-revou h1{
+    font-family: 'poppins-bold',arial, sans-serif; 
+    font-size: 50px;
+    /* background-color: chartreuse;  */
+}
+
+.header-content-project-revou h2{
+    font-family: 'poppins-bold',arial, sans-serif; 
+    color: grey; 
+    font-size: 30px;
+    /* background-color: violet;  */
+}
+
+/* ------------------------------------------------------------------------------- */
+/* BANNER */
+.container-banner-project-revou{
+    width: 100%; 
+    height: 100vh; 
+    display: flex; 
+    /* background-color: olivedrab; */
+}
+.banner-content{
+    width: 60%; 
+    /* background-color: violet; */
+}
+
+/* SLIDER */
+.container-main-carousel-2{
+    width: 80%;
+    height: 81vh;
+    margin: auto;
+    /* background-color: red; */
+  }
+.main-carousel-2{
+    width: 100%; 
+    height: 100%; 
+    /* background-color: yellow;  */
+    position: relative;
+}
+.carousel-cell-2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    /* background-color: gray;  */
+    position: relative;
+}
+.carousel-cell-2 h2{
+    height: 10%; 
+    width: 90%; 
+    padding-left: 20%; 
+    font-family: 'poppins-bold',arial, sans-serif; 
+    color: grey;
+    /* background-color: aliceblue; */
+}
+.main-carousel-2 .carousel-cell-2.is-nav-selected{
+    background: black;
+}
+.carousel-cell-2 img{
+    width: 100%;
+    object-fit: cover;    
+}
+
+.tanggapan-konsumen{
+    width: 100%; 
+    height: 12%; 
+    padding-left: 20%; 
+    display: flex;
+    /* background-color: seagreen; */
+}
+
+.foto-konsumen{
+    width: 20%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center; 
+    /* background-color: brown; */
+}
+
+.foto-konsumen img{
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    /* background-color: palevioletred; */
+}
+
+.nama-isikomen{
+    width: 100%; 
+    /* background-color: turquoise; */
+}
+
+.nama-isikomen h1{
+    font-family: 'poppins-bold',arial, sans-serif;
+}
+.nama-isikomen p{
+    font-family: 'poppins-bold',arial, sans-serif;
+    margin-top: 1%;
+}
+
+
+
+@media screen and (max-width:834px){
+    /* M   E   N   U    N   A   V   B   A   R    S   E   C   T   I   O   N */
+    .navbar-menu-project-revou{
+        position: sticky;
+        top: 0px;
+        height: 63px;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    .container-logo-project-revou .content-logo-project-revou{
+        height: 50%;
+    }
+    .container-logo-project-revou{
+        padding: 0;
+        align-items: center;
+        z-index: 2;
+    }
+    .container-logo-project-revou{
+        width: 100px;
+        justify-content: end;
+    }
+    .content-logo-project-revou img{
+        width: 100%; 
+    }
+
+    nav .container-list-menu-project-revou.slider {
+        transform: translateY(0);
+        overflow-x: hidden;
+    }
+    .container-list-menu-project-revou{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        right: 0;
+        z-index: 1;
+        padding: 0;
+        transform: translateY(-100%);
+        background-color: #9bc063;
+        transition: all 1s;
+        overflow-x: hidden;
+        scroll-snap-type: y mandatory;
+    }
+    .container-list-menu-project-revou ul{
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        /* justify-content: space-evenly; */
+    }
+    .container-list-menu-project-revou ul li{
+        width: 30%;
+        border-radius: 10px;
+    }
+    .container-hamburger-icon-project-revou{
+        position: relative;
+        width:27%;
+        height: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: flex-end;
+        /* background-color: aquamarine;   */
+    }
+    .hamburger-menu-project-revou{
+        height: 100%;
+        width: 62px;
+        /* padding-bottom: 10px; */
+        gap: 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color:#194949; */
+    }
+    .hamburger-menu-project-revou span{
+        z-index: 3;
+        background-color: gray;
+        border-radius: 3px;
+        transition: all 0.5s;
+    }
+    .top{
+        width: 27px;
+        height: 5.4px;
+    }
+    .middle{
+        width: 27px;
+        height: 5.4px;
+    }.buttom{
+        width: 27px;
+        height: 5.4px;
+    }
+    .hamburger-menu-project-revou input{
+        position: absolute;
+        z-index: 5;
+        width: 30px;
+        height: 30px;
+        opacity: 0;
+        z-index:5;
+        cursor: pointer;
+    }
+    .kepoya{
+        background-color: #AA70BE;
+        width: 100px;
+        height: 100px;
+        z-index: 0;
+        display: none;
+    }
+    /* H  M   M  E  N  U   A  N  I  M  A  T  I  O  N */
+    .hamburger-menu-project-revou span:nth-child(2){
+        transform-origin: 0 0; 
+    }
+    .hamburger-menu-project-revou span:nth-child(4){
+        transform-origin: 0 0; 
+    }
+    .hamburger-menu-project-revou input:checked ~ span:nth-child(2){
+        transform: rotate(45deg) translate(4px, -5px);
+        width: 36px;
+    }
+    .hamburger-menu-project-revou input:checked ~ span:nth-child(4){
+        transform: rotate(-45deg) translate(-3px, 7px);
+        width: 36px;
+    }
+    .hamburger-menu-project-revou input:checked ~ span:nth-child(3){
+        transform: scale(0);
+    }
+    .hamburger-menu-project-revou input:checked{
+        transform: scale();
+        z-index: 5;
+    }
+}
